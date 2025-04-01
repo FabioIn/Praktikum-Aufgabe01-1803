@@ -3,7 +3,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         //Deklaration
-        String[] personsOriginal = {"A", "B", "C", "D", "E", "F", "G", "H", "I"};
+        String[] personsOriginal = {"Evi Bauer", "Loredana Dickas Vilosola", "Kathrin Gerhard", "Emily Ghindea", "Alexia Guist", "Dana Herrmann", "Florentina Ilazi", "Fabio Interdonato", "Julia Jellen", "Sarah Krammer", "Thi Le", "Alina Moor","Aron Thiele","Joline Weidinger"};
         String[] personsCloned = personsOriginal.clone();  // Kopie der Original-Liste
         String[] shuffledList = new String[personsCloned.length];
         int[][] table = new int[shuffledList.length][2]; // Zweidimensionales Array für Person + Aufgabe
@@ -45,7 +45,7 @@ public class Main {
         // Ausgabe der sortierten Liste
         System.out.println("Die Aufgaben werden wie folgt verteilt:");
         for (int i = 0; i < table.length; i++) {
-            System.out.print(shuffledList[table[i][0]] + ": " + table[i][1]+ " | ");
+            System.out.println(shuffledList[table[i][0]] + ": " + table[i][1]);
         }
     }
 }
